@@ -217,5 +217,9 @@ body
     color: rgba(255, 247, 206, 1);
 }
 
-
+#FooterContent
+{
+    margin-left: 32px;
+    margin-top: 15px;
+}
 
