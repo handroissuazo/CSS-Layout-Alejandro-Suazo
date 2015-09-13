@@ -1,11 +1,25 @@
+@font-face
+{
+    font-family: 'geometry_soft_probold_n';
+    src: url('../fonts/geometrysoftpro-boldn-webfont.eot');
+    src: url('../fonts/geometrysoftpro-boldn-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/geometrysoftpro-boldn-webfont.woff2') format('woff2'),
+    url('../fonts/geometrysoftpro-boldn-webfont.woff') format('woff'),
+    url('../fonts/geometrysoftpro-boldn-webfont.ttf') format('truetype'),
+    url('../fonts/geometrysoftpro-boldn-webfont.svg#geometry_soft_probold_n') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body
 {
-
+    background-color: rgba(128, 154, 128, 1);
 }
 
 .BodyBackgroundFill
 {
     background-image: url(../img/OriginalMetropolitan.png);
+    z-index: 1 !important;
 }
 
 #BackgroundButton
@@ -15,6 +29,7 @@ body
     position: fixed;
     bottom: 5px;
     left: 5px;
+    z-index: 2;
 }
 
 #BackgroundDiv
@@ -24,13 +39,63 @@ body
     height: 100%;
     top: 0px;
     left: 0px;
-    z-index: -1;
 }
 
 #SideBar
 {
     height: 100%;
-    width: 3em;
+    width: 140px;
+    margin-left: 10px;
+    padding-top: 66px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    position: absolute;
+}
+
+#SideBarContent
+{
+    width: 100%;
+    height: 460px;
+    background-color: rgba(110, 129, 110, 1);
+    padding-top: 12.5px;
+}
+
+#SideBarContent h1
+{
+    font-size: 14px;
+    margin-left: 6.5px;
+    -webkit-margin-before: 1px;
+    -webkit-margin-after: 0em;
+    font-weight: 100;
+    letter-spacing: 0.5px;
+}
+
+#SideBarContent h2
+{
+    font-size: 12px;
+    -webkit-margin-before: 3.5px;
+    -webkit-margin-after: 3.5px;
+    margin-left: 15.5px;
+    font-weight: 100;
+    letter-spacing: 0.5px;
+}
+
+.SubTitle
+{
+    background-color: rgba(102,133,112, 1);
+    height: 14px;
+    width: calc(100% - 4px);
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    padding-left: 4px;
+    color: white;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 4px;
+}
+
+.SubTitle span
+{
+    padding-left: 10px;
 }
 
 #TitleBar
@@ -39,16 +104,38 @@ body
     height: 63px;
     padding: 3px;
     padding-top: 0px;
+    color: rgba(102, 51, 51, 1);
+}
+
+#TitleBar img
+{
+
+    padding: 3px;
+    padding-top: 0px;
+    left: -5px;
+    top: -0.1px;
+    position: absolute;
 }
 
 .leftColumn
 {
-    float: left;
+    display: inline;
+    position: absolute;
+    left: 245px;
+    top: 5px;
+    font-size: 21px;
+    letter-spacing: 5.6px;
 }
 
 .rightColumn
 {
-    float: right;
+    display: inline;
+    position: absolute;
+    left: 462px;
+    top: 10px;
+    font-family: geometry_soft_probold_n;
+    font-size: 8px;
+    letter-spacing: 2px;
 }
 
 #The5000YearsText
@@ -58,16 +145,65 @@ body
 
 #MetropolitanText
 {
-    font-size: 20px;
+    font-size: 37px;
+    position: absolute;
+    top: 16px;
+    left: 185px;
+    letter-spacing: 9.7px;
+    color: white;
 }
 
 #MuseumOfArtText
 {
-
+    position: absolute;
+    top: 45px;
+    left: 285px;
+    font-size: 21px;
+    letter-spacing: 4.6px;
 }
 
 #Content
 {
     margin-left: 150px;
 }
+
+#CenterContent
+{
+    padding-left: 4px;
+    width: 566.9px;
+}
+
+#SpecialExhibitionsContent
+{
+    width: 100%;
+    height: 281px;
+    background-color: rgba(110, 129, 110, 1);
+    margin-bottom: 4px;
+}
+
+.CenterImage
+{
+    margin-top: 8px;
+    margin-left: 29px;
+}
+
+#SelectedHighlightsContent
+{
+    width: 100%;
+    height: 169.5px;
+    background-color: rgba(110, 129, 110, 1);
+    margin-bottom: 4px;
+}
+
+.Description
+{
+    font-family: geneva, arial, sans-serif;
+    font-size: 10.1px;
+    display: inline-block;
+    width: 150px;
+    color: white;
+    position: absolute;
+}
+
+
 
