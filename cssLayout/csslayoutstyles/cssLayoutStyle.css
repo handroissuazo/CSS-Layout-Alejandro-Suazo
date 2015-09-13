@@ -86,16 +86,17 @@ body
     height: 14px;
     width: calc(100% - 4px);
     font-size: 12px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.7px;
     padding-left: 4px;
     color: white;
     font-family: 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
     margin-bottom: 4px;
 }
 
 .SubTitle span
 {
-    padding-left: 10px;
+    padding-left: 11px;
 }
 
 #TitleBar
@@ -203,6 +204,17 @@ body
     width: 150px;
     color: white;
     position: absolute;
+}
+
+.DescriptionDetailTitle
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.DescriptionDetails
+{
+    color: rgba(255, 247, 206, 1);
 }
 
 
