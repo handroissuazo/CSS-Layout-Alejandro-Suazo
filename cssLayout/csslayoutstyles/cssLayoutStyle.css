@@ -19,7 +19,7 @@ body
 .BodyBackgroundFill
 {
     background-image: url(../img/OriginalMetropolitan.png);
-    z-index: 1 !important;
+    z-index: 10 !important;
 }
 
 .ShowWord
@@ -42,6 +42,8 @@ body
     color: rgba(255,255,255, 0.5);
     top: 250px;
     left: 900px;
+
+    visibility: hidden;
 }
 
 #Original
@@ -58,6 +60,8 @@ body
     color: rgba(255,255,255, 0.5);
     top: 250px;
     left: 900px;
+
+    visibility: hidden;
 }
 
 #BackgroundButton
@@ -67,22 +71,43 @@ body
     position: fixed;
     bottom: 5px;
     left: 5px;
-    z-index: 2;
+    z-index: 1000;
+}
+
+#ToMainButton
+{
+    width: 150px;
+    height: 40px;
+    position: fixed;
+    bottom: 5px;
+    left: 160px;
+    z-index: 1000;
+}
+
+#ToVariantButton
+{
+    width: 150px;
+    height: 40px;
+    position: fixed;
+    bottom: 5px;
+    left: 160px;
+    z-index: 1000;
 }
 
 #BackgroundDiv
 {
-    width: 100%;
-    height: 100%;
-    position: fixed;
+    width: 1917px;
+    height: 950px;
+    position: absolute;
     top: 0px;
     left: 0px;
+    z-index: -1;
 }
 
 #SideBar
 {
     height: 100%;
-    width: 141.5px;
+    width: 140px;
     margin-left: 8.5px;
     padding-top: 66px;
     font-family: 'Arial Narrow', Arial, sans-serif;
@@ -123,7 +148,7 @@ body
 {
     background-color: rgba(102,133,112, 1);
     height: 14px;
-    width: calc(100% - 4px);
+    width: calc(100% - 3px);
     font-size: 12px;
     letter-spacing: 0.7px;
     padding-left: 4px;
@@ -176,6 +201,7 @@ body
     font-family: geometry_soft_probold_n;
     font-size: 8px;
     letter-spacing: 2px;
+    width: 200px;
 }
 
 #The5000YearsText
@@ -200,6 +226,7 @@ body
     left: 285px;
     font-size: 21px;
     letter-spacing: 4.6px;
+    width: 300px;
 }
 
 #Content
@@ -225,6 +252,7 @@ body
 {
     margin-top: 8px;
     margin-left: 29px;
+    cursor: pointer;
 }
 
 #SelectedHighlightsContent
@@ -265,6 +293,227 @@ body
     margin-top: 15px;
 }
 
-/* Super specific element stuff (this exists because the assignment noted in the coding standards section: Put all of your style declarations into a separate .css file. Access them in your HTML via the class attribute, the name attribute, or through HTML element level declarations)
-    These are case specidic styles that would normally exist on the html as a style attribute, because it's extremely specific and shouldn't be in the css in my opinion */
+/* Super specific element stuff (this exists because the assignment noted in the coding standards section: "Put all of
+    your style declarations into a separate .css file. Access them in your HTML via the class attribute, the name
+    attribute, or through HTML element level declarations")
 
+    These are case specific styles that would normally exist on the html in a style attribute, because it's extremely
+    specific and shouldn't be in the .css in my opinion
+    */
+
+#TimelineOfArtHistory
+{
+    margin-top: 4px !important;
+}
+
+#MetStore
+{
+    margin-top: 4px !important;
+    letter-spacing: 0.7px !important;
+}
+
+.MarginAndSpacingFix
+{
+    margin-top: 4px !important;
+    letter-spacing: 0.8px !important;
+}
+
+#SupportTheMet
+{
+    letter-spacing: 0.7px !important;
+}
+
+.TopMarginFix
+{
+    margin-top: 5px !important;
+}
+
+#News
+{
+    margin-top: 5px !important;
+    letter-spacing: 0.8px !important;
+}
+
+#Search
+{
+    margin-top: 9px !important;
+    letter-spacing: 0.8px !important;
+}
+
+#SearchBox
+{
+    margin-left: 4px !important;
+    margin-top: 5px !important;
+    width: 85px !important;
+}
+
+#GoButton
+{
+    margin-left: -3.5px !important;
+    margin-top: 1px !important;
+}
+
+.MiddleAndRightImage
+{
+    margin-top: 8px !important;;
+    cursor: pointer !important;;
+    margin-left: 26px !important;
+}
+
+#ExhibitionDescriptions
+{
+    margin-left: 29px !important;
+}
+
+#ChuckClosePrints
+{
+    width: 135px !important;
+    margin-top: 1px !important;
+}
+
+#TreasuresOfALostArt
+{
+    margin-left: 180px !important;
+    margin-top: 1px !important;
+}
+
+#ThirdEntry
+{
+    margin-left: 360px !important;
+    margin-top: 1px !important;
+}
+
+#MoreSpecialExhibitions
+{
+    left: 591px !important;
+    top: 354px !important;
+}
+
+#SubTitleSpan
+{
+    padding-left: 13px !important;
+}
+
+.FirstImage
+{
+    margin-left: 16px !important;
+    margin-top: 3.8px !important;
+}
+
+.FirstAndSecondRowImages
+{
+    margin-left: 122px !important;
+    margin-top: 3.8px !important;
+}
+
+.FirstRowImageDescriptions
+{
+    width: 100px !important;
+    font-size: 13px !important;
+    margin-left: 4px !important;
+    margin-top: 4px !important;
+}
+
+#FirstRowLastDescription
+{
+    width: 120px !important;
+    font-size: 13px !important;
+    margin-left: 4px !important;
+    margin-top: 4px !important;
+}
+
+#SecondRowFirstDescription
+{
+    width: 110px !important;
+    font-size: 13px !important;
+    margin-left: 4px !important;
+    margin-top: 3.5px !important;
+}
+
+.SecondRowDescriptions
+{
+    width: 100px !important;
+    font-size: 13px !important;
+    margin-left: 4px !important;
+    margin-top: 3.5px !important;
+}
+
+#SecondRowLastDescription
+{
+    width: 100px !important;
+    font-size: 13px !important;
+    margin-left: 8px !important;
+    margin-top: 3.5px !important;
+}
+
+#CopyrightInformation
+{
+    width: 400px !important;
+}
+
+#TermsAndConditionsLink
+{
+    width: 300px !important;
+    margin-top:11px !important;
+    display: inline-block !important;
+}
+
+#LineAfterTermsAndConditions
+{
+    margin-left: 104px !important;
+    margin-top:11px !important;
+    color: white !important;
+    font-size: 10.1px !important;
+    position: absolute !important;
+}
+
+#PrivacyPolicyLink
+{
+    margin-left: 110px !important;
+    margin-top:11px !important;
+    display: inline-block !important;
+}
+
+#ContactInformationLink
+{
+    width: 300px !important;
+    margin-top: 32px !important;
+    display: inline-block !important;
+}
+
+#LineAfterContactInformation
+{
+    margin-left: 94.1px !important;
+    margin-top:32px !important;
+    color: white !important;
+    font-size: 10.1px !important;
+    position: absolute !important;
+}
+
+#CareerOpportunitiesLink
+{
+    margin-left: 100px !important;
+    margin-top:32px !important;
+    display: inline-block !important;
+}
+
+#AcknowledgmentsLink
+{
+    width: 300px !important;
+    margin-top: 59px !important;
+    display: inline-block !important;
+}
+
+#WhatsOnline
+{
+    background-color: rgba(102,133,112, 1);
+    height: 14px;
+    width: calc(100% - 4px);
+    font-size: 11.5px;
+    letter-spacing: 0.7px;
+    padding-left: 5.5px;
+    color: white;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    margin-bottom: 4px;
+}
